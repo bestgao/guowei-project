@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { Calendar, Users, CheckSquare, Clock, AlertTriangle, Target, FileText, Bell, Plus } from 'lucide-react'
+import { Calendar, Users, CheckSquare, Clock, AlertTriangle, Target, FileText, Bell } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 
 interface Task {
@@ -259,7 +259,9 @@ const ProjectManagementAI = () => {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h4 className="font-medium mb-2">Today's Priority Tasks</h4>
+
+<h4 className="font-medium mb-2">Today&apos;s Priority Tasks</h4>
+
             <div className="space-y-2">
               {getTasksForDate("August 4").map(task => (
                 <div key={task.id} className="p-3 bg-blue-50 rounded border-l-4 border-blue-400">
