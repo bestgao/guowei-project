@@ -44,7 +44,7 @@ const ProjectManagementAI = () => {
 
   const projectData = {
     projectName: "国蔚项目 - 在检察院翻案",
-    dates: ["August 4", "August 5", "August 6", "August 7", "August 8"]
+ dates: ["八月四日", "八月五日", "八月六日", "八月七日", "八月八日"]
   }
 
   useEffect(() => {
